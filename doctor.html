@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>森奕閣中醫診所</title>
+    <title>森奕閣中醫診所-醫師介紹</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
     <script>
       fetch('navbar.html')
         .then(response => response.text())
@@ -15,28 +16,12 @@
           document.getElementById('navbar-container').innerHTML = navbarContent;
         });
     </script>
-    <script>
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(footerContent => {
-          document.getElementById('footer-container').innerHTML = footerContent;
-        });
-    </script>
   </head>
   <body>
     <div id="navbar-container"></div>
+    
+    <div class="container container-fluid" style="background-color: #E0E0D0;">
 
-    <div class="container container-fluid" style="height: 300px; background-image: url('bg.png'); background-size: 100% auto; color: white; background-color: #C7C6B6;">
-      <h1>森奕閣中醫診所</h1>
-      <div class="row">
-        <div class="col">
-          熱愛生活 <br>
-          熱愛我的家人朋友 <br>
-          熱愛中醫的陳建森醫師 <br>
-        </div>
-      </div>
-    </div>
-    <div class="container container-fluid" style="background-color: #EBEEE8;">
       <h1>醫師介紹</h1>
       <div class="row">
         <div class="col-3">
@@ -50,7 +35,5 @@
         </div>
       </div>
     </div>
-    
-    <div id="footer-container"></div>
   </body>
 </html>
