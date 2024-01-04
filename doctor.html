@@ -16,6 +16,13 @@
           document.getElementById('navbar-container').innerHTML = navbarContent;
         });
     </script>
+    <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(footerContent => {
+            document.getElementById('footer-container').innerHTML = footerContent;
+          });
+      </script>
   </head>
   <body>
     <div id="navbar-container"></div>
@@ -35,5 +42,7 @@
         </div>
       </div>
     </div>
+
+    <div id="footer-container"></div>
   </body>
 </html>

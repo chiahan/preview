@@ -6,6 +6,8 @@
     <title>森奕閣中醫診所</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
     <script>
       fetch('navbar.html')
@@ -14,8 +16,75 @@
           document.getElementById('navbar-container').innerHTML = navbarContent;
         });
     </script>
+    <script>
+        fetch('footer.html')
+          .then(response => response.text())
+          .then(footerContent => {
+            document.getElementById('footer-container').innerHTML = footerContent;
+          });
+      </script>
   </head>
   <body>
     <div id="navbar-container"></div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2>診所地址</h2>
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.796379976657!2d121.51662377704618!3d25.040983338007177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a973c658b995%3A0xfde0dc33b0bfb0ff!2sNTUH%20(National%20Taiwan%20University%20Hospital)!5e0!3m2!1sen!2stw!4v1704388508361!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2>門診時間</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">週一</th>
+                <th scope="col">週二</th>
+                <th scope="col">週三</th>
+                <th scope="col">週四</th>
+                <th scope="col">週五</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">上午</th>
+                <td>健保</td>
+                <td>健保</td>
+                <td>健保</td>
+                <td>健保</td>
+                <td>健保</td>
+              </tr>
+              <tr>
+                <th scope="row">下午</th>
+                <td>自費</td>
+                <td>自費</td>
+                <td>自費</td>
+                <td>自費</td>
+                <td>自費</td>
+              </tr>
+              <tr>
+                <th scope="row">晚上</th>
+                <td>休診</td>
+                <td>自費</td>
+                <td>休診</td>
+                <td>自費</td>
+                <td>休診</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>  
+
+    <div id="footer-container"></div>
   </body>
+  
 </html>
