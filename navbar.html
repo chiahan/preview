@@ -10,27 +10,43 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="nav-brand" href="index.html">
-          <ion-icon name="logo-slack" style="color: whitesmoke; font-size: 24px;"></ion-icon>
+        <a class="navbar-brand" href="index.html">
+          <ion-item>
+            <ion-icon name="logo-slack" style="color: whitesmoke; font-size: 24px; vertical-align: text-top;" ></ion-icon>
+            森奕閣中醫診所
+          </ion-item>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle-navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="doctor.html">醫師介紹</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">服務項目</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">婦科</a></li>
+                <li><a class="dropdown-item" href="#">內科</a></li>
+                <li><a class="dropdown-item" href="#">皮膚科</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">韓式美顏針</a></li>
+              </ul>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="clinic.html">診所資訊</a>
+              <a class="nav-link" href="doctor.html">醫師介紹</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="https://www.facebook.com/profile.php?id=100095237044455">醫師臉書</a>
+              <a class="nav-link" href="clinic.html">診所資訊</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/profile.php?id=100095237044455">醫師臉書</a>
             </li> 
           </ul>
-        </div>  
+          <form class="d-flex">
+            <button class="btn btn-outline-light" href="https://line.me/R/oaMessage/@068byxdb/?我要掛號" type="submit">我要掛號</button>
+          </form>
+        </div>
       </div>
     </nav>
     
