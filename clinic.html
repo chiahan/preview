@@ -10,67 +10,87 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="body.css">
     <script type="text/javascript" src="layout.js"></script>
-  </body>
+    <style>
+      .map {
+        width: 100%;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
     <div id="navbar-container"></div>
-
-    <div class="container mt-5">
+    
+    <section class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <h2>診所地址</h2>
+          <h2>診所資訊</h2>
+          <p>
+          主治項目：韓式美顏針、不孕症、月經諸疾、<br>
+          更年期調理、各類皮膚疾患調理、體質調理<br>
+          電話：02-66041129<br>
+          地址：新北市林口區文化三路一段245號
+          </p>
           <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.796379976657!2d121.51662377704618!3d25.040983338007177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a973c658b995%3A0xfde0dc33b0bfb0ff!2sNTUH%20(National%20Taiwan%20University%20Hospital)!5e0!3m2!1sen!2stw!4v1704388508361!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.893062807036!2d121.36063587548381!3d25.07161337779206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7b26b79d3fd%3A0x752e52064db24f4d!2z5qOu5aWV6Zaj5Lit6Yar6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1712298686077!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container mt-5">
+    <section class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-md-8">
           <h2>門診時間</h2>
+          <p>
+          早診 09:00-12:00<br>
+          午診 14:00-17:00<br>
+          晚診 18:00-21:00<br>
+          </p>
           <table class="table table-striped">
             <thead>
               <tr>
                 <th scope="col"></th>
-                <th scope="col">週一</th>
-                <th scope="col">週二</th>
-                <th scope="col">週三</th>
-                <th scope="col">週四</th>
-                <th scope="col">週五</th>
+                <th scope="col">一</th>
+                <th scope="col">二</th>
+                <th scope="col">三</th>
+                <th scope="col">四</th>
+                <th scope="col">五</th>
+                <th scope="col">六</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">上午</th>
-                <td>健保</td>
-                <td>健保</td>
-                <td>健保</td>
-                <td>健保</td>
-                <td>健保</td>
+                <th scope="row">早診<br>09:00-12:00</th>
+                <td></td>
+                <td></td>
+                <td>美顏<br>預約</td>
+                <td></td>
+                <td></td>
+                <td>V</td>
               </tr>
               <tr>
-                <th scope="row">下午</th>
-                <td>自費</td>
-                <td>自費</td>
-                <td>自費</td>
-                <td>自費</td>
-                <td>自費</td>
+                <th scope="row">午診<br>14:00-17:00</th>
+                <td></td>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+                <td>美顏<br>預約</td>
               </tr>
               <tr>
-                <th scope="row">晚上</th>
-                <td>休診</td>
-                <td>自費</td>
-                <td>休診</td>
-                <td>自費</td>
-                <td>休診</td>
+                <th scope="row">晚診<br>18:00-21:00</th>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+                <td>美顏<br>預約</td>
+                <td>V</td>
+                <td></td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-    </div>  
+    </section>  
 
     <div id="footer-container"></div>
   </body>
